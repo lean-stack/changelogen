@@ -75,8 +75,9 @@ export async function generateMarkDown(
     })
   );
 
-  const authors = [..._authors.entries()].map((e) => ({ name: e[0], ...e[1] }));
-
+  // const authors = [..._authors.entries()].map((e) => ({ name: e[0], ...e[1] }));
+  const authors = [];
+  
   if (authors.length > 0) {
     markdown.push(
       "",
